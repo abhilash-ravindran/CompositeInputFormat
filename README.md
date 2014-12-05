@@ -32,6 +32,9 @@ CompositeInputFormat will delegate picking the key to that class. In this exampl
 Don't forget to include appropriate classes for output format and key, value pair
 
 conf.setOutputFormat(TextOutputFormat.class); 
+
 TextOutputFormat.setOutputPath(conf, new Path(args[2])); 
+
 conf.setOutputKeyClass(Text.class); 
+
 conf.setOutputValueClass(Text.class);
