@@ -4,13 +4,12 @@ CompositeInputFormat
 Understanding Data Joins in MapReduce
 
 Abstract:
-
 	This project demonstrates how to implement Map side join using CompositeInputFomat. Why take the time to learn how to join data instead, when it is better accomplished using tools that work at higher level of abstraction such as Hive or Pig?? Joining data is arguably one of the biggest uses of Hadoop. Gaining a full understanding of how Hadoop performs joins is critical for deciding which join to use and for debugging when trouble strikes. Also, once you fully understand how different joins are performed in Hadoop, you can better leverage tools like Hive and Pig. 
 	
 Prerequites for using CompositeInputFormat :
-	all the files you want to join are sorted
-	all of them have the same joining key
-	the files are too big to join using DistributedCache
+1. All the files you want to join are sorted
+2. All of them have the same joining key
+3. The files are too big to join using DistributedCache
 
 If you have n files sorted by their join key, you can combine them easily, reading the records one by one from each files so that you are always reading the records with same key.
 
